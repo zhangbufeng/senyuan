@@ -1,8 +1,8 @@
 /*
 * @Author: dapang
 * @Date:   2018-07-18 09:38:52
-* @Last Modified by:   dapang
-* @Last Modified time: 2018-07-18 10:25:44
+* @Last Modified by:   zhangbufeng
+* @Last Modified time: 2018-07-19 17:57:17
 */
 *{
 	margin: 0;
@@ -22,7 +22,7 @@ body{
 	background-color: #FFFFFF;
 }
 .header{
-	width: 1505.6px;
+	width: 1501.6px;
 	height: 100.6px;
 }
 .header .top{
@@ -182,15 +182,15 @@ body{
 	background-color: #2a63a4;
 	border-radius: 5px;
 }
-.header .bottom .wrap .nav ul li:nth-child(2) a{
+.header .bottom .wrap .nav ul li:nth-child(5) a{
+	color: #fff;
 	background-color: #2a63a4;
 	border-radius: 5px;
-	color: #fff;
 }
 section.banner{
 	display: block;
 	position: relative;
-	width: 1505.6px;
+	width: 1501.6px;
 	height: 280px;
 	overflow: hidden;
 }
@@ -205,7 +205,7 @@ section.banner img{
 section.menu{
 	display: block;
 	height: 45px;
-	width: 1505.6px;
+	width: 1501.6px;
 	background-color: #2a63a4;
 }
 section.menu .wrap{
@@ -237,13 +237,177 @@ section.menu .wrap ul li a{
 	font-family: microsoft yahei;
 	transition: all 0.3s ease-in-out;
 }
-
+.main{
+	display: block;
+	width: 1501.6px;
+	height: 1486.2px;
+}
+.main .wrap{
+	width: 1000px;
+	height: 100%;
+	margin: 0 auto;
+}
+.main .wrap .bread{
+	width: 100%;
+	height: 71.6px;
+}
+.main .wrap .bread .posi{
+	display: block;
+	font-size: 12px;
+	font-weight: normal;
+	text-align: right;
+	padding: 25px 0;
+	color: #555;
+}
+.main .wrap .bread .posi a{
+	color: #555;
+}
+.main .wrap .bread .posi a:hover{
+	color: #2a63a4;
+}
+.main .wrap .content{
+	padding: 0 0 50px;
+	height: 1533px;
+	box-sizing: border-box;
+}
+.main .wrap .content .q_massage{
+	text-align: right;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 13px;
+}
+.main .wrap .content .q_massage .q_btn{
+	border: 1px solid #99c4e4;
+    display: inline-block;
+    width: 121px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    border-radius: 2px;
+    color: #2a63a4;
+}
+.main .wrap .content .q_massage .q_btn .ico{
+	display: inline-block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('../img/ico.png') 0 -60px;
+    margin: -4px 10px 0 0;
+    font-weight: normal;
+}
+.main .wrap .content .question{
+	display: block;
+	border-bottom: 1px solid #ddd;
+	padding: 20px 0 10px;
+}
+.main .wrap .content .question dt{
+	display: block;
+	position: relative;
+	padding-left: 80px;
+	min-height: 31px;	
+}
+.main .wrap .content .question dt ._digit{
+    font-size: 22px;
+    color: #2a63a4;
+    vertical-align: middle;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: -5px;
+}
+.main .wrap .content .question dt .ask{
+    background: url('../img/ask.gif') no-repeat;
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    vertical-align: middle;
+    margin-right: 2%;
+    position: absolute;
+    left: 25px;
+    top: 0;
+}
+.main .wrap .content .question dt .title{
+    display: inline-block;
+    vertical-align: middle;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    line-height: 1.8;
+    color: #555;
+}
+.main .wrap .content .question dd{
+	display: block;
+	padding-left: 25px;
+	margin-top: 10px;
+}
+.main .wrap .content .question dd .q_content{
+    position: relative;
+    padding-left: 55px;
+}
+.main .wrap .content .question dd .q_content .q_answer{
+    background: url('../img/answer.gif') no-repeat;
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.main .wrap .content .question dd .q_content .q_answer_content{
+	font-size: 13px;
+	line-height: 1.8;
+	color: #555;
+}
+.main .wrap .content .question dd .tr{
+	text-align: right;
+	font-size: 13px;
+	line-height: 1.8;
+	color: #555;
+}
+.main .wrap .content .question dd .tr .ico1_13{
+	display: inline-block;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    background: url('../img/ico.png') -40px -40px;
+    margin: 0 .3em;
+    font-style: normal;
+}
+.main .wrap .content .page{
+    text-align: center;
+    line-height: 16px;
+    margin-top: 20px;
+}
+.main .wrap .content .page span{
+    background: #2a63a4;
+    color: #fff;
+    display: inline-block;
+    border: 1px solid #ededed;
+    padding: 5px 10px;
+    vertical-align: middle;
+    margin: 0 0 10px -1px;
+}
+.main .wrap .content .page a:hover{
+	background: #2a63a4;
+    color: #fff;
+}
+.main .wrap .content .page a{
+	display: inline-block;
+    border: 1px solid #ededed;
+    padding: 5px 10px;
+    vertical-align: middle;
+    margin: 0 0 10px -1px;
+    color: #555;
+}
 footer{
-	width: 1505.6px;
+	width: 1501.6px;
 	height: 337px;
 }
 footer .top{
-	width: 1505.6px;
+	width: 1501.6px;
 	height: 289.8px;
 	padding: 32px 0 40px;
 	background-color: #005AAB;
