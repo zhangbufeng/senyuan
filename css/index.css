@@ -2,7 +2,7 @@
 * @Author: dapang
 * @Date:   2018-07-10 17:44:54
 * @Last Modified by:   zhangbufeng
-* @Last Modified time: 2018-08-01 22:29:26
+* @Last Modified time: 2018-08-08 17:12:59
 */
 *{
 	margin: 0;
@@ -179,24 +179,26 @@ body{
 	background-color: #2a63a4;
 	border-radius: 5px;
 }
-section{
+.banner{
 	width: 1519.2px;
 	height: 482px;
 	position: relative;
 	top: 0;
 	left: 0;
 }
-section ul{
+.banner ul{
 	height: 482px;
 	width: 1506px;
 }
-section ul li{
+.banner ul li{
 	position: absolute;
+	left: 1519.2px;
+	top: 0;
 	height: 482px;
 	width: 1506px;
 	z-index: 1;
 }
-section .btn{
+.banner .btn{
 	position: absolute;
 	bottom: 27px;
 	left: 0;
@@ -204,10 +206,10 @@ section .btn{
 	text-align: center;
 	z-index: 20;
 }
-section .btn a:hover{
+.banner .btn a:hover{
 	background-color: #005aab;
 }
-section .btn a{
+.banner .btn a{
 	display: inline-block;
 	width: 13px;
 	height: 13px;
@@ -517,32 +519,27 @@ section .btn a{
 	height: 81.6px;
 	margin-top: 180px;
 }
-.center_box2 .wrap .row .span-8 .list li{
+.center_box2 .wrap .row .span-8 .list .p{
 	width: 554.06px;
 	height: 24.2px;
 	background: url('../img/i_n_li.gif') left center no-repeat;
     overflow: hidden;
     padding: 2px 0 2px 12px;
 }
-.center_box2 .wrap .row .span-8 .list li:nth-child(2){
-	transform: translateY(27.2px);
-}
-.center_box2 .wrap .row .span-8 .list li:nth-child(3){
-	transform: translateY(54.4px);
-}
-.center_box2 .wrap .row .span-8 .list li .tit{
+.center_box2 .wrap .row .span-8 .list .p .tit{
 	float: left;
 	width: 83%;
+	height: 16.8px;
 	overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
     color: #555;
     font-size: 13px;
 }
-.center_box2 .wrap .row .span-8 .list li .tit:hover{
+.center_box2 .wrap .row .span-8 .list .p .tit:hover{
 	color: #2a63a4;
 }
-.center_box2 .wrap .row .span-8 .list li .time{
+.center_box2 .wrap .row .span-8 .list .p .time{
 	width: 80.93px;
 	height: 23.2px;
 	display: inline-block;
@@ -575,6 +572,7 @@ section .btn a{
 }
 .center_box2 .center_video .v_video{
 	margin-top: 20px;
+	overflow: hidden;
 }
 .center_box2 .center_video .v_video a{
 	overflow: hidden;
@@ -590,6 +588,10 @@ section .btn a{
 	width: 100%;
 	height: 100%;
 	vertical-align: top;
+}
+.center_box2 .center_video .v_video:hover a img{
+	transform: scale(1.2, 1.2);
+	transition: all 0.3s ease;
 }
 .center_box2 .center_video .v_video a span{
 	background: url('../img/play.png') no-repeat;
